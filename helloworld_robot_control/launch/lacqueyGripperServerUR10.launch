@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ARM" default="right"/>
+  <arg name="PC_IP_ADDR" default="192.168.1.3"/>
+  <arg name="ROBOT_IP_ADDR" default="192.168.1.10"/>
+  <arg name="GRIPPER_PORT" default="50003"/>
+
+        
+  <node name="gripper_driver1" pkg="tum_ics_lacquey_gripper_driver" type="lacquey_gripper_driver" args="$(arg ARM) $(arg PC_IP_ADDR) $(arg ROBOT_IP_ADDR) $(arg GRIPPER_PORT)" output="screen">
+  	<rosparam file="$(find helloworld_robot_control)/launch/configs/namespacePrefixes.yaml" command="load"/>
+  </node>
+
+
+</launch>
+

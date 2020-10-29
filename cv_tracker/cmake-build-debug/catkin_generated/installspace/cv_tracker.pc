@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: cv_tracker
+Description: Description of cv_tracker
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs

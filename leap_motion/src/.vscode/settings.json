@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/slowly/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages",
+        "/home/slowly/LeapSDK/lib",
+        "/home/slowly/LeapSDK/lib/x64",
+        "/home/slowly/LeapSDK/lib",
+        "/home/slowly/LeapSDK/lib/x86"
+    ]
+}

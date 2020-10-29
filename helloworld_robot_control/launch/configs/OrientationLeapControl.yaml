@@ -1,0 +1,9 @@
+OrientationLeapControl:
+  gains_px: [30, 77, 70]
+  gains_dx: [36, 66, 42, 36, 36, 30]
+  gains_pn: [30, 77, 70, 15, 15, 15]
+  gains_dn: [30, 55, 35, 30, 32, 25]
+  t0_w: [-1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+  length_vec: [0.118, -0.6121, -0.5716, 0.1639, 0.1157, 0.2322]
+  commandedVelocity: [0.02]
+  reactionTime: [0.75]

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="CONFIG_FILE_PATH" default="$(find helloworld_robot_control)/launch/configs/configUR10_FD.ini"/>
+    <node name="helloWorldControl" pkg="helloworld_robot_control" type="HelloworldTester" args="$(arg CONFIG_FILE_PATH)" output="screen">
+        <rosparam file="$(find tum_ics_ur_robot_controllers)/launch/configs/pidInt.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/PDGControl.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/PIDGControl.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/OrientationControl.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/OrientationLeapControl.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/LeapControl.yaml" command="load"/>
+        <rosparam file="$(find helloworld_robot_control)/launch/configs/GravityControl.yaml" command="load"/>
+    </node>
+</launch>

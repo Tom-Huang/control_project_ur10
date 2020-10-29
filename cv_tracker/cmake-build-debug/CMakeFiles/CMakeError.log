@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_199a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_199a2.dir/build.make CMakeFiles/cmTC_199a2.dir/build
+make[1]: Entering directory '/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_199a2.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_199a2.dir/CheckSymbolExists.c.o   -c /media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_199a2
+/home/hcg-ubuntu/CLION/clion-2018.3.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_199a2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_199a2.dir/CheckSymbolExists.c.o  -o cmTC_199a2 
+CMakeFiles/cmTC_199a2.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_199a2.dir/build.make:86: recipe for target 'cmTC_199a2' failed
+make[1]: *** [cmTC_199a2] Error 1
+make[1]: Leaving directory '/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_199a2/fast' failed
+make: *** [cmTC_199a2/fast] Error 2
+
+File /media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4546f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4546f.dir/build.make CMakeFiles/cmTC_4546f.dir/build
+make[1]: Entering directory '/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4546f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4546f.dir/CheckFunctionExists.c.o   -c /home/hcg-ubuntu/CLION/clion-2018.3.3/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4546f
+/home/hcg-ubuntu/CLION/clion-2018.3.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4546f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4546f.dir/CheckFunctionExists.c.o  -o cmTC_4546f -lpthreads 
+/usr/bin/x86_64-linux-gnu-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4546f.dir/build.make:86: recipe for target 'cmTC_4546f' failed
+make[1]: *** [cmTC_4546f] Error 1
+make[1]: Leaving directory '/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_4546f/fast' failed
+make: *** [cmTC_4546f/fast] Error 2
+
+

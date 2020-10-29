@@ -1,0 +1,10 @@
+# Booleans control ROS_INFO printing 
+enable_controller_info: true
+enable_frame_info: true
+enable_hand_info: true
+
+# Booleans control gesture detection
+enable_gesture_circle: true
+enable_gesture_swipe: false
+enable_gesture_screen_tap: false
+enable_gesture_key_tap: false

@@ -1,0 +1,6 @@
+
+float64[] goal
+float64 duration
+bool gravityIdentification
+---
+bool success

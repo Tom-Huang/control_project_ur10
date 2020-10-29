@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find helloworld_robot_control)/launch/helloworldTester.launch"/>
+    <include file="$(find leap_motion)/launch/demo.launch"/>
+    <node name="camera_arucoPublisher" pkg="cv_tracker" type="destination_publisher" />
+</launch>

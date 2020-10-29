@@ -1,0 +1,8 @@
+prefix=/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/devel
+
+Name: cv_tracker
+Description: Description of cv_tracker
+Version: 0.0.0
+Cflags: -I/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/devel/include
+Libs: -L/media/hcg-ubuntu/DATA/Linux/MSBRC_final_project/src/cv_tracker/cmake-build-debug/devel/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs
